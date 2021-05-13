@@ -1,2 +1,4 @@
 # a4k
-my post-exploitation stuff automator for tryhackme's king of the hill
+
+# usage
+give it a read and change the 5 variables at the start, now you're good to go!
