@@ -40,7 +40,7 @@ function ssh() {
   sed -i 's/Port/#Port/g' $ssh
   echo "Port $RANDOM" >> $ssh
 
-  echo; echo "[+] NEW PORT IS `tail -n 1 $ssh | cut -d' ' -f2`!"
+  echo; echo; echo "[+] NEW PORT IS `tail -n 1 $ssh | cut -d' ' -f2`!"; echo; echo
   systemctl restart sshd.service
 }
 
