@@ -63,12 +63,12 @@ function koth() {
 if [ "$#" -gt 0 ]
 then
   case "$1" in
-        a) persist; sleep 3
-           ssh; sleep 3
+        a) persist; sleep 2
+           ssh; sleep 2
            nyan
            koth;;
-        -a)persist; sleep 3
-           ssh; sleep 3
+        -a)persist; sleep 2
+           ssh; sleep 2
            nyan
            koth;;
 
